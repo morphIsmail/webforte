@@ -211,6 +211,7 @@ body {
 .form2 {
   margin-top: 30px;
   margin-bottom: 30px;
+  padding-left: 40px;
   background: linear-gradient(to left, #8effc3, #d0fed3);
   border: 1px solid #01a759;
 }
@@ -235,4 +236,74 @@ body {
   top: -30px;
   right: 0px;
   z-index: 30;
+}
+ul.social {
+  display: flex;
+  color: #000;
+  background: rgba(255, 255, 255, 0.5);
+  list-style: none;
+  padding: 15px;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 70;
+  margin: 0;
+}
+ul.social li {
+  padding-left: 10px;
+}
+.man {
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  z-index: 60;
+}
+/*О компании*/
+.about {
+  background-image: url(../img/aboutBack.png);
+  font-family: 'Montserrat', sans-serif;
+}
+.about .container {
+  background: #fff;
+  border: 1px solid #acc7d9;
+}
+.about h2 {
+  margin-top: 70px;
+  margin-bottom: 50px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+.about ul {
+  font-size: 20px;
+  list-style: none;
+}
+.about ul li {
+  padding: 10px;
+  position: relative; 
+}
+.about ul li+hr {
+  margin: 0;
+  max-width: 50%;
+}
+.about p {
+  font-size: 20px;
+}
+.about button {
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 10px 30px;
+  color: #f76c10;
+  background: transparent;
+  border: 2px solid #f76c10;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  font-size: 22px;
+  transition: 0.3s;
+}
+.about button:hover {
+  color: #fff;
+  background: linear-gradient(to left, #f74c00, #f68b1f);
 }
