@@ -307,3 +307,49 @@ ul.social li {
   color: #fff;
   background: linear-gradient(to left, #f74c00, #f68b1f);
 }
+/* Услуги */
+.service {
+  background-image: url(../img/serviceBack.png);
+}
+.service h2 {
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: #fff;
+  font-weight: 900;
+}
+.service p {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: underline;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.service button {
+  color: #fff;
+  background: linear-gradient(to left, #f74c00, #f68b1f);
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 10px 30px;
+  border: 2px solid #f76c10;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  font-size: 22px;
+  transition: 0.3s;
+}
+.service div.mount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 285px;
+  border-radius: 50%;
+  background: rgba(110, 110, 110, 0.5);
+}
+.sale1 {
+  position: absolute;
+  width: 150px;
+  top: -30px;
+  right: 0px;
+  z-index: 30;
+}
+
