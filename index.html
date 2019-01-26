@@ -6,9 +6,11 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="css/bootstrap.min.css">
-   <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous">
+   <link rel="stylesheet" href="slick/slick.css">
+   <link rel="stylesheet" href="slick/slick-theme.css">
+   <link rel="stylesheet" href="css/style.css">
    <title>Webforte</title>
 </head>
 
@@ -110,13 +112,18 @@
          <div class="row align-items-center">
             <div class="col-6">
                <ul>
-                  <li>Актуальные web-решения. Для бизнеса. И не только</li><hr>
-                  <li>Специализация: одностраничники<br>(лендинги, промо-сайты, визитки)</li><hr>
-                  <li>Во всем новые – но не новички!</li><hr>
-                  <li>Проверенные технологии, маркетинговые сценарии и триггеры</li><hr>
-                  <li>Гарантия на программный код – 2 года</li><hr>
+                  <li>Актуальные web-решения. Для бизнеса. И не только</li>
+                  <hr>
+                  <li>Специализация: одностраничники<br>(лендинги, промо-сайты, визитки)</li>
+                  <hr>
+                  <li>Во всем новые – но не новички!</li>
+                  <hr>
+                  <li>Проверенные технологии, маркетинговые сценарии и триггеры</li>
+                  <hr>
+                  <li>Гарантия на программный код – 2 года</li>
+                  <hr>
                   <li>Средний срок исполнения заказа – 7 рабочих дней</li>
-               </ul>     
+               </ul>
             </div>
             <div class="col-6">
                <img src="img/about.png" class="img-fluid" alt="">
@@ -130,46 +137,280 @@
          </div>
       </div>
    </div>
-<!-- Услуги -->
+   <!-- Услуги -->
    <div class="container-fluid service">
-         <div class="container">
-            <div class="row text-center">
-               <div class="col">
-                  <h2>Услуги</h2>
+      <div class="container">
+         <div class="row text-center">
+            <div class="col">
+               <h2>Услуги</h2>
+            </div>
+         </div>
+         <div class="row text-center justify-content-center">
+            <div class="col-3">
+               <div class="mount">
+                  <img class="sale1" src="img/sale.png" alt="">
+                  <img src="img/create.png" alt="">
+               </div>
+               <p>Создание</p>
+               <button>Заказать</button>
+            </div>
+            <div class="col-3">
+               <div class="mount">
+                  <img src="img/support.png" alt="">
+               </div>
+               <p>Поддержка</p>
+               <button>Заказать</button>
+            </div>
+            <div class="col-3">
+               <div class="mount">
+                  <img src="img/seo.png" alt="">
+               </div>
+               <p>Продвижение (SEO)</p>
+               <button>Заказать</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Этапы работы -->
+   <div class="container-fluid steps">
+      <div class="container">
+         <div class="row">
+            <div class="col">
+               <h2>Этапы работы</h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-3 p-0">
+               <div class="item-steps active">
+                  <img src="img/1.png" alt="1">
+                  <img src="img/brif.png" height="45" alt="">
+                  <p>Бриф</p>
                </div>
             </div>
-            <div class="row text-center justify-content-center">
-               <div class="col-3">
-                  <div class="mount">
-                     <img class="sale1" src="img/sale.png" alt="">
-                     <img src="img/create.png" alt="">
-                  </div>
-                  <p>Создание</p>
-                  <button>Заказать</button>
+            <div class="col-3 p-0">
+               <div class="item-steps">
+                  <img src="img/2.png" alt="2">
+                  <img src="img/dogovor.png" height="45" alt="">
+                  <p>Договор + ТЗ</p>
                </div>
-               <div class="col-3">
-                  <div class="mount">
-                     <img src="img/support.png" alt="">
-                  </div>
-                  <p>Поддержка</p>
-                  <button>Заказать</button>
+            </div>
+            <div class="col-3 p-0">
+               <div class="item-steps">
+                  <img src="img/3.png" alt="3">
+                  <img src="img/zakaz.png" height="45" alt="">
+                  <p>Исполнение<br>заказа</p>
                </div>
-               <div class="col-3">
-                  <div class="mount">
-                     <img src="img/seo.png" alt="">
-                  </div>
-                  <p>Продвижение (SEO)</p>
-                  <button>Заказать</button>
+            </div>
+            <div class="col-3 p-0">
+               <div class="item-steps">
+                  <img src="img/4.png" alt="4">
+                  <img src="img/akt.png" height="45" alt="">
+                  <p>Акт оказания<br>услуг</p>
                </div>
             </div>
          </div>
+      </div>
+   </div>
+   <!-- Примеры работ -->
+   <div class="container-fluid portfolio">
+      <div class="container">
+         <div class="row">
+            <div class="col">
+               <h2>Примеры работ</h2>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-12">
+               <div class="slider">
+                  <div><img src="img/ex1.png" alt=""></div>
+                  <div><img src="img/ex2.png" alt=""></div>
+                  <div><img src="img/ex3.png" alt=""></div>
+                  <div><img src="img/ex1.png" alt=""></div>
+                  <div><img src="img/ex2.png" alt=""></div>
+                  <div><img src="img/ex3.png" alt=""></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Заказчику -->
+   <div class="container-fluid customer">
+      <div class="container">
+         <div class="row">
+            <div class="col">
+               <h2>Заказчику</h2>
+            </div>
+         </div>
+         <div class="row justify-content-center text-center">
+            <div class="col-5 pb-4">
+               <div class="orange">
+                  <p>Что нужно знать при заказе лендинга</p><br>
+                  <button>Читать</button>
+               </div>
+            </div>
+            <div class="col-5 pb-4">
+               <div class="red">
+                  <p>Landing page: все, что вам нужно<br>знать о продающей странице</p>
+                  <button>Читать</button>
+               </div>
+            </div>
+            <div class="col-5">
+               <div class="blue">
+                  <p>Как улучшить дизайн landing page,<br>повысив при этом конверсию?</p>
+                  <button>Читать</button>
+               </div>
+            </div>
+            <div class="col-5">
+               <div class="green">
+                  <p>Какой цвет выбрать для презентации</p><br>
+                  <button>Читать</button>
+               </div>
+            </div>
+            <div class="col-12">
+               <span>Показать ещё...</span>
+            </div>
+         </div>
+      </div>
+      <!-- Отзывы -->
+      <div class="container mt-1">
+         <div class="row">
+            <div class="col">
+               <img src="img/medal.png" class="medal" alt="">
+               <h2>Отзывы</h2>
+            </div>
+         </div>
+         <div class="row text-center">
+            <div class="col-10 pb-5">
+               <div class="review">
+                  <img src="img/avatarMan.png" alt="">
+                  <div>
+                     <p>Иван Иванов<br>ООО «Промстройинвест»</p>
+                     <p>«Ничего лучше не видел.<br>Все было на самом высоком уровне».</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row justify-content-end">
+            <div class="col-10 pb-5">
+               <div class="review right">
+                  <img src="img/avatarWooman.png" height="100%" alt="">
+                  <div>
+                     <p>Ольга Немежная<br>Домохозяйка</p>
+                     <p>«Очень очковала, когда заказывала.<br>Но страхи развеялись, когда впервые увидела<br>макет
+                        сайта. Конверсия зашкаливает!»</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-10 pb-5">
+               <div class="review">
+                  <img src="img/avatarMan.png" alt="">
+                  <div>
+                     <p>Иван Иванов<br>ООО «Промстройинвест»</p>
+                     <p>«Ничего лучше не видел.<br>Все было на самом высоком уровне».</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row justify-content-end">
+            <div class="col-10">
+               <div class="review right">
+                  <img src="img/avatarWooman.png" height="100%" alt="">
+                  <div>
+                     <p>Ольга Немежная<br>Домохозяйка</p>
+                     <p>«Очень очковала, когда заказывала.<br>Но страхи развеялись, когда впервые увидела<br>макет
+                        сайта. Конверсия зашкаливает!»</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row text-center">
+            <div class="col-12">
+               <span>Показать ещё...</span>
+            </div>
+         </div>
+      </div>
+   </div>
+   </div>
+   <!-- Кнопки -->
+   <div class="container-fluid buttons">
+      <div class="container">
+         <div class="row text-center">
+            <div class="col">
+               <p>Загрузи отдел продаж по полной!</p>
+               <button class="button1">Заказать</button>
+               <p>Остались вопросы –</p>
+               <button class="button2">Свяжитесь</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- Футер -->
+   <div class="container-fluid footer">
+      <div class="container">
+         <div class="row justify-content-center">
+            <div class="col-2">
+               <ul>
+                  <li>О компании</li>
+                  <li>Услуги</li>
+                  <li>Этапы работы</li>
+                  <li>Заказчику</li>
+                  <li>Отзывы</li>
+               </ul>
+            </div>
+            <div class="col-2">
+               <ul>
+                  <li>Реквизиты</li>
+                  <li>Оплата</li>
+               </ul>
+            </div>
+            <div class="col-3">
+               <ul>
+                  <li>Бриф</li>
+                  <li>Бонусы</li>
+                  <li>Политика</li>
+                  <li>Конфиденциальности</li>
+               </ul>
+            </div>
+            <div class="col-2">
+               <ul>
+                  <li>Вакансии</li>
+               </ul>
+            </div>
+            <div class="col-3 borderNone">
+               <ul>
+                  <li>Контакты:</li>
+                  <li><i class="fas fa-phone fa-rotate-90"></i> +7 920 654 38 10</li>
+                  <li><i class="far fa-envelope"></i> info@webforte.ru</li>
+                  <li class="socialNet">
+                     <i class="fab fa-google-plus-g"></i>
+                     <i class="fab fa-vk"></i>
+                     <i class="fab fa-facebook-f"></i>
+                     <i class="fab fa-twitter"></i>
+                  </li>
+               </ul>
+            </div>
+            <div class="col-12">
+               <ul>
+                  <li class="text-center copy">&copy 2018 <span>WEBFORTE.RU</span></li>
+               </ul>
+            </div>
+         </div>
+      </div>
    </div>
 
    <script src="js/jquery-3.3.1.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
+   <script src="slick/slick.min.js"></script>
    <script>
       $(".navbar-toggler").click(function () {
          $(".navbar-toggler span i").toggleClass('fa-times');
+      });
+      $('.slider').slick({
+         infinite: true,
+         slidesToShow: 3,
+         slidesToScroll: 1
       });
    </script>
 </body>
