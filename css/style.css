@@ -102,6 +102,7 @@ body {
   position: relative;
   z-index: 20;
 }
+
 .header h2 span {
   font-size: 115px;
 }
@@ -155,10 +156,11 @@ body {
   display: inline-block;
   margin-top: 15px;
   font-size: 12px;
-  border-bottom: 1px solid #000; 
+  border-bottom: 1px solid #000;
 }
 
 .form1 button {
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.15);
   color: #fff;
   text-transform: uppercase;
   font-weight: 900;
@@ -263,12 +265,14 @@ ul.social {
   border-top-right-radius: 10px;
   position: absolute;
   bottom: 0;
+  left: 15px;
   z-index: 70;
   margin: 0;
 }
 
 ul.social li {
-  padding-left: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .man {
@@ -328,11 +332,13 @@ ul.social li {
   font-size: 20px;
   transition: 0.3s;
 }
+
 .about img {
   max-width: 200%;
   margin-top: 55px;
   margin-left: -150px;
 }
+
 .about button:hover {
   color: #fff;
   background: linear-gradient(to left, #f74c00, #f68b1f);
@@ -342,6 +348,10 @@ ul.social li {
 .service {
   background-image: url(../img/serviceBack.png);
   font-family: 'Montserrat', sans-serif;
+}
+
+.jca {
+  justify-content: space-around;
 }
 
 .service h2 {
@@ -381,6 +391,7 @@ ul.social li {
   justify-content: center;
   align-items: center;
   height: 285px;
+  width: 285px;
   border-radius: 50%;
   background: rgba(110, 110, 110, 0.5);
 }
@@ -512,12 +523,14 @@ ul.social li {
   background-repeat: no-repeat;
   font-family: 'Montserrat', sans-serif;
 }
+
 .customer .container {
   padding-left: 25px;
   padding-right: 25px;
   background: #fff;
   border: 1px solid #acc7d9;
 }
+
 .customer h2 {
   font-weight: 900;
   color: #000;
@@ -526,6 +539,7 @@ ul.social li {
   margin-top: 85px;
   margin-bottom: 70px;
 }
+
 .customer p {
   display: inline-block;
   color: #fff;
@@ -533,6 +547,7 @@ ul.social li {
   margin-bottom: 0px;
   border-bottom: 1px solid #fff;
 }
+
 .customer button {
   margin-top: 30px;
   color: #000;
@@ -542,12 +557,14 @@ ul.social li {
   border-radius: 25px;
   box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.3);
 }
+
 .customer span {
   display: inline-block;
   border-bottom: 1px solid #000;
   margin-bottom: 45px;
   margin-top: 55px;
 }
+
 .customer .orange {
   padding: 30px;
   padding-top: 45px;
@@ -559,6 +576,7 @@ ul.social li {
   border-radius: 8px;
   height: 100%;
 }
+
 .customer .red {
   padding: 30px;
   padding-top: 45px;
@@ -570,6 +588,7 @@ ul.social li {
   border-radius: 8px;
   height: 100%;
 }
+
 .customer .blue {
   padding: 30px;
   padding-top: 45px;
@@ -581,6 +600,7 @@ ul.social li {
   border-radius: 8px;
   height: 100%;
 }
+
 .customer .green {
   padding: 30px;
   padding-top: 45px;
@@ -592,6 +612,7 @@ ul.social li {
   border-radius: 8px;
   height: 100%;
 }
+
 /* Отзывы */
 .review {
   display: flex;
@@ -601,14 +622,17 @@ ul.social li {
   text-align: left;
   margin-left: 110px;
 }
+
 .review.right {
   padding: 20px 50px;
   background-image: url(../img/reviewBackRight.png);
 }
+
 .review.right img {
   margin-left: 50px;
   order: 1;
 }
+
 .review div p:nth-child(odd) {
   border: none;
   padding-left: 30px;
@@ -619,6 +643,7 @@ ul.social li {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
 .review div p:nth-child(even) {
   display: block;
   border: none;
@@ -627,18 +652,21 @@ ul.social li {
   color: #000;
   text-decoration: none;
 }
+
 .medal {
   z-index: 9999;
   position: absolute;
   top: 45px;
   right: 40px
 }
+
 /* Кнопки */
 .buttons {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   margin-top: 50px;
 }
+
 .buttons button.button1 {
   box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 40px;
@@ -651,11 +679,13 @@ ul.social li {
   border-radius: 30px;
   transition: 0.3s;
 }
+
 .buttons button.button1:hover {
   border: 1px solid #f68b1f;
   color: #f68b1f;
   background: transparent;
 }
+
 .buttons button.button2 {
   margin-bottom: 70px;
   text-transform: uppercase;
@@ -666,70 +696,472 @@ ul.social li {
   color: #f68b1f;
   background: transparent;
 }
+
 .buttons button.button2:hover {
   background: linear-gradient(to left, #f74c00, #f68b1f);
   color: #fff;
   border: none;
 }
+
 /* Футер */
 .footer {
   font-family: 'Montserrat', sans-serif;
   background: #232426;
 }
+
 .footer .row {
   padding-top: 30px;
 }
+
 .footer ul li {
   text-align: left;
   list-style: none;
   color: #b4b4b4;
 }
+
 .footer .col-2 {
   border-right: 1px dotted #81818141;
 }
+
 .footer .col-3 {
   border-right: 1px dotted #81818141;
 }
+
 .footer .col-12 {
   padding-top: 10px;
 }
+
 .email {
   text-decoration: underline;
 }
+
 .footer .copy {
   font-size: 16px;
   font-weight: 400;
 }
+
 .footer .copy span {
   font-size: 20px;
   font-weight: 900;
 }
+
 .footer .borderNone {
   border: none;
 }
-.fa-phone, .fa-envelope {
+
+.fa-phone,
+.fa-envelope {
   margin-right: 10px;
   color: #f68b1f;
 }
+
 .fa-phone {
   border: 1px solid #f68b1f;
   font-size: 12px;
   padding: 4px;
   border-radius: 50%;
 }
-.fa-envelope  {
+
+.fa-envelope {
   font-size: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .socialNet i {
   margin-top: 12px;
   margin-right: 8px;
   text-align: center;
-  border-radius: 50%; 
+  border-radius: 50%;
   border: 1px solid #818181;
   font-size: 16px;
   height: 35px;
   width: 35px;
   padding: 8px;
+}
+
+/* Медиа запросы  */
+@media screen and (max-width: 1100px) {
+
+  /*Шапка*/
+  .header {
+    padding-bottom: 102px;
+    background: #f0f1eb;
+  }
+
+  .header h2 {
+    padding-left: 30px;
+    font-size: 70px;
+  }
+
+  .header h2 span {
+    font-size: 90px;
+  }
+
+  .header h2:first-child {
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+
+  .header h2:last-child {
+    margin-left: 62px;
+  }
+
+  /*Первая форма*/
+  .form1 {
+    padding: 50px 60px 25px 60px;
+    margin: 20px;
+  }
+
+  .form1 form {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .form1 p.small {
+    display: block;
+    text-align: center;
+    border: none;
+    text-decoration: underline;
+  }
+
+  .form1 button {
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .form1 input {
+    width: 48%;
+  }
+
+  .sale {
+    position: absolute;
+    top: -48px;
+    right: -38px;
+    z-index: 30;
+    width: 25%;
+  }
+
+  .rocket {
+    width: 23%;
+    position: absolute;
+    top: -32px;
+    right: 120px;
+    z-index: 30;
+  }
+
+  /*Вторая форма*/
+  .form2 {
+    margin-top: 400px;
+  }
+
+  .form2 p.bold {
+    text-align: center;
+  }
+
+  .form2 p.checked {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .present {
+    width: 25%;
+    position: absolute;
+    top: -65px;
+    right: 45px;
+  }
+
+  ul.social {
+    position: absolute;
+    width: 100%;
+    top: 970px;
+    background: transparent;
+  }
+
+  ul.social li {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .ellipse {
+    position: absolute;
+    width: 55%;
+    top: -250px;
+    right: 90px;
+    z-index: 10;
+  }
+
+  .man {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    z-index: 60;
+  }
+
+  .ship {
+    position: absolute;
+    top: 430px;
+    right: 230px;
+    width: 57%;
+    z-index: 30;
+  }
+
+  .helicopter {
+    position: absolute;
+    width: 40%;
+    top: 390px;
+    right: 30px;
+    z-index: 30;
+  }
+
+  /*О компании*/
+  .dflex-class {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dflex-class div:nth-child(1) {
+    justify-content: center;
+    text-align: center;
+    order: 2;
+  }
+
+  .dflex-class div:nth-child(2) {
+    justify-content: center;
+    text-align: center;
+    order: 1;
+  }
+
+  .about ul li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    width: 200px;
+    background-image: url(../img/line.png);
+  }
+
+  .about ul li:nth-child(1)::after {
+    display: none;
+  }
+
+  .about ul li:nth-child(3)::after {
+
+    bottom: 80px;
+  }
+
+  .about ul li:nth-child(7)::after {
+    bottom: 80px;
+  }
+
+  .about ul li+hr {
+    display: none;
+  }
+
+  .about p {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .about button {
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+
+  .about img[alt="man"] {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /*Услуги*/
+  .service {
+    background: #26282b;
+  }
+
+  .service p {
+    display: block;
+    border: none;
+    text-decoration: underline;
+  }
+
+  .service button {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 80px;
+  }
+
+  .service div.mount {
+    display: inline-flex;
+  }
+
+  .sale1 {
+    position: absolute;
+    width: 180px;
+    top: -40px;
+    right: 250px;
+    z-index: 30;
+  }
+
+  /* Этапы работы */
+  .steps {
+    background: #fff;
+  }
+
+  .steps .container {
+    padding-bottom: 60px;
+
+  }
+
+  .item-steps {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/tabStepEmpty.png);
+    padding: 0;
+    width: 70%;
+    margin-left: 20%;
+    height: 190px;
+    margin-bottom: -20px;
+  }
+
+  .item-steps p {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  .item-steps.active {
+    color: #fff;
+    background-image: url(../img/tabStepFull.png);
+  }
+
+  .item-steps img[alt="1"],
+  .item-steps img[alt="2"],
+  .item-steps img[alt="3"],
+  .item-steps img[alt="4"] {
+    position: absolute;
+    left: 45%;
+    top: 0px;
+  }
+
+  /* Примеры работ */
+
+  .portfolio img {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    box-shadow: 0px 20px 24px -9px rgba(0, 0, 0, 0.5);
+  }
+
+  /*слайдер*/
+  .slick-prev,
+  .slick-next {
+    height: 35px;
+    width: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    /* to position the arrows left and right at the bottom of slider */
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+  }
+
+  .slick-prev {
+    left: 30px;
+  }
+
+  .slick-next {
+    right: 30px;
+  }
+
+  /* Заказчику */
+  .customer p {
+    display: inline-block;
+    color: #fff;
+    font-size: 19px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #fff;
+  }
+
+  .customer span {
+    margin-top: 15px;
+  }
+
+  .customer button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+
+  .customer .orange,
+  .customer .red,
+  .customer .blue,
+  .customer .green {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  /* Отзывы */
+  .review {
+    display: flex;
+    background-image: url(../img/reviewBack.png);
+    background-repeat: no-repeat;
+    padding: 30px 90px;
+    text-align: left;
+    margin-left: 0px;
+  }
+  .review.right {
+    padding: 20px 0px;
+    background-image: url(../img/reviewBackRight.png);
+  }
+  .review.right img {
+    margin-left: 0px;
+    order: 1;
+  }
+  .review div p:nth-child(odd) {
+    border: none;
+    padding-left: 30px;
+    color: #f6891e;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .review div p:nth-child(even) {
+    display: block;
+    border: none;
+    font-style: italic;
+    padding-left: 30px;
+    color: #000;
+    text-decoration: none;
+  }
+  .medal {
+    display: none;
+  }
+  /*Футер*/
+  .footerRow div:nth-child(1) {
+    order: 0;
+  }
+  .footerRow div:nth-child(2) {
+    order: 3;
+  }
+  .footerRow div:nth-child(3) {
+    order: 1;
+  }
+  .footerRow div:nth-child(4) {
+    order: 4;
+  }
+  .footerRow div:nth-child(5) {
+    order: 2;
+  }
+  .footerRow div:nth-child(6) {
+    order: 6;
+  }
 }
