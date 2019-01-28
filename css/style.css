@@ -25,7 +25,11 @@ body {
 
 #my-nav {
   font-size: 20px;
-  padding: 15px;
+  padding: 20px;
+}
+
+.nav-item {
+  margin-right: 10px;
 }
 
 .navbar {
@@ -88,7 +92,8 @@ body {
 .header h2 {
   display: inline-block;
   color: #ffffff;
-  font-size: 110px;
+  font-size: 98px;
+  text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   background: linear-gradient(to left, #f74c00, #f68b1f);
@@ -96,6 +101,9 @@ body {
   padding: 0 50px;
   position: relative;
   z-index: 20;
+}
+.header h2 span {
+  font-size: 115px;
 }
 
 .header h2:first-child {
@@ -144,9 +152,10 @@ body {
 }
 
 .form1 p.small {
+  display: inline-block;
   margin-top: 15px;
   font-size: 12px;
-  text-decoration: underline;
+  border-bottom: 1px solid #000; 
 }
 
 .form1 button {
@@ -154,9 +163,9 @@ body {
   text-transform: uppercase;
   font-weight: 900;
   border: none;
-  padding: 15px 20px;
+  padding: 15px 35px;
   border-radius: 30px;
-  font-size: 20px;
+  font-size: 16px;
   background: linear-gradient(to left, #f74c00, #f68b1f);
 }
 
@@ -165,7 +174,7 @@ body {
   border: solid 1px #205ebd;
   padding: 15px 20px;
   border-radius: 30px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .form1 input::placeholder {
@@ -175,35 +184,35 @@ body {
 .ellipse {
   position: absolute;
   top: -100px;
-  right: 100px;
+  right: 200px;
   z-index: 10;
 }
 
 .sale {
   position: absolute;
-  top: -40px;
-  right: 260px;
+  top: -70px;
+  right: -85px;
   z-index: 30;
 }
 
 .rocket {
   position: absolute;
-  top: -10px;
-  right: 530px;
+  top: -40px;
+  right: 150px;
   z-index: 30;
 }
 
 .ship {
   position: absolute;
-  top: 150px;
-  right: 0px;
+  top: 90px;
+  right: -325px;
   z-index: 30;
 }
 
 .helicopter {
   position: absolute;
-  top: 20px;
-  right: 15px;
+  top: -25px;
+  right: -333px;
   z-index: 30;
 }
 
@@ -281,8 +290,8 @@ ul.social li {
 }
 
 .about h2 {
-  margin-top: 70px;
-  margin-bottom: 50px;
+  margin-top: 90px;
+  margin-bottom: 70px;
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
@@ -300,7 +309,7 @@ ul.social li {
 
 .about ul li+hr {
   margin: 0;
-  max-width: 50%;
+  max-width: 45%;
 }
 
 .about p {
@@ -313,13 +322,17 @@ ul.social li {
   padding: 10px 30px;
   color: #f76c10;
   background: transparent;
-  border: 2px solid #f76c10;
+  border: 1px solid #f76c10;
   border-radius: 30px;
   margin-bottom: 50px;
-  font-size: 22px;
+  font-size: 20px;
   transition: 0.3s;
 }
-
+.about img {
+  max-width: 200%;
+  margin-top: 55px;
+  margin-left: -150px;
+}
 .about button:hover {
   color: #fff;
   background: linear-gradient(to left, #f74c00, #f68b1f);
@@ -333,18 +346,21 @@ ul.social li {
 
 .service h2 {
   text-transform: uppercase;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  font-size: 35px;
+  margin-top: 90px;
+  margin-bottom: 65px;
   color: #fff;
   font-weight: 900;
 }
 
 .service p {
-  font-size: 20px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 23px;
   color: #fff;
-  text-decoration: underline;
   margin-top: 30px;
   margin-bottom: 30px;
+  border-bottom: 1px solid #fff;
 }
 
 .service button {
@@ -352,11 +368,11 @@ ul.social li {
   background: linear-gradient(to left, #f74c00, #f68b1f);
   text-transform: uppercase;
   font-weight: 900;
-  padding: 10px 30px;
+  padding: 8px 30px;
   border: 2px solid #f76c10;
   border-radius: 30px;
-  margin-bottom: 50px;
-  font-size: 22px;
+  margin-bottom: 65px;
+  font-size: 21px;
   transition: 0.3s;
 }
 
@@ -391,12 +407,13 @@ ul.social li {
 }
 
 .steps h2 {
+  font-size: 35px;
   font-weight: 900;
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 90px;
+  margin-bottom: 70px;
 }
 
 .item-steps {
@@ -442,8 +459,8 @@ ul.social li {
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 85px;
+  margin-bottom: 70px;
 }
 
 .portfolio img {
@@ -492,11 +509,12 @@ ul.social li {
 /* Заказчику */
 .customer {
   background-image: url(../img/customer.png);
+  background-repeat: no-repeat;
   font-family: 'Montserrat', sans-serif;
 }
 .customer .container {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 25px;
+  padding-right: 25px;
   background: #fff;
   border: 1px solid #acc7d9;
 }
@@ -505,14 +523,18 @@ ul.social li {
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 85px;
+  margin-bottom: 70px;
 }
 .customer p {
+  display: inline-block;
   color: #fff;
-  text-decoration: underline;
+  font-size: 19px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #fff;
 }
 .customer button {
+  margin-top: 30px;
   color: #000;
   background: white;
   border: none;
@@ -521,13 +543,14 @@ ul.social li {
   box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.3);
 }
 .customer span {
-  display: block;
-  text-decoration: underline;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  margin-bottom: 45px;
+  margin-top: 55px;
 }
 .customer .orange {
   padding: 30px;
+  padding-top: 45px;
   background: #f6891e;
   background-image: url(../img/orange.png);
   background-size: contain;
@@ -538,6 +561,7 @@ ul.social li {
 }
 .customer .red {
   padding: 30px;
+  padding-top: 45px;
   background: #d63933;
   background-image: url(../img/red.png);
   background-size: contain;
@@ -548,6 +572,7 @@ ul.social li {
 }
 .customer .blue {
   padding: 30px;
+  padding-top: 45px;
   background: #2283c7;
   background-image: url(../img/blue.png);
   background-size: contain;
@@ -556,8 +581,9 @@ ul.social li {
   border-radius: 8px;
   height: 100%;
 }
-.customer .green{
+.customer .green {
   padding: 30px;
+  padding-top: 45px;
   background: #1bb363;
   background-image: url(../img/green.png);
   background-size: contain;
@@ -572,20 +598,31 @@ ul.social li {
   background-image: url(../img/reviewBack.png);
   background-repeat: no-repeat;
   padding: 30px 90px;
-  text-align-last: left;
+  text-align: left;
+  margin-left: 110px;
 }
 .review.right {
+  padding: 20px 50px;
   background-image: url(../img/reviewBackRight.png);
 }
-.review div p:first-child {
+.review.right img {
+  margin-left: 50px;
+  order: 1;
+}
+.review div p:nth-child(odd) {
+  border: none;
   padding-left: 30px;
   color: #f6891e;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: bold;
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.review div p:last-child {
+.review div p:nth-child(even) {
+  display: block;
+  border: none;
+  font-style: italic;
   padding-left: 30px;
   color: #000;
   text-decoration: none;
@@ -593,8 +630,8 @@ ul.social li {
 .medal {
   z-index: 9999;
   position: absolute;
-  top: 40px;
-  right: 20px
+  top: 45px;
+  right: 40px
 }
 /* Кнопки */
 .buttons {
@@ -603,6 +640,7 @@ ul.social li {
   margin-top: 50px;
 }
 .buttons button.button1 {
+  box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.15);
   margin-bottom: 40px;
   text-transform: uppercase;
   color: #fff;
@@ -619,7 +657,7 @@ ul.social li {
   background: transparent;
 }
 .buttons button.button2 {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
   text-transform: uppercase;
   font-weight: 900;
   padding: 10px 30px;
@@ -655,17 +693,22 @@ ul.social li {
 .footer .col-12 {
   padding-top: 10px;
 }
+.email {
+  text-decoration: underline;
+}
 .footer .copy {
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 400;
 }
 .footer .copy span {
+  font-size: 20px;
   font-weight: 900;
 }
 .footer .borderNone {
   border: none;
 }
 .fa-phone, .fa-envelope {
+  margin-right: 10px;
   color: #f68b1f;
 }
 .fa-phone {
@@ -680,11 +723,13 @@ ul.social li {
   margin-bottom: 10px;
 }
 .socialNet i {
+  margin-top: 12px;
+  margin-right: 8px;
   text-align: center;
   border-radius: 50%; 
   border: 1px solid #818181;
-  font-size: 20px;
-  height: 38px;
-  width: 38px;
+  font-size: 16px;
+  height: 35px;
+  width: 35px;
   padding: 8px;
 }
