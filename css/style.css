@@ -780,8 +780,10 @@ ul.social li {
   padding: 8px;
 }
 
-/* Медиа запросы  */
-@media screen and (max-width: 1100px) {
+/* Медиа запросы планшет  =================================================
+=========================================================================
+=========================================================================*/
+@media screen and (max-width: 1100px) and (min-width: 480px) {
 
   /*Шапка*/
   .header {
@@ -1163,5 +1165,342 @@ ul.social li {
   }
   .footerRow div:nth-child(6) {
     order: 6;
+  }
+}
+/* Медиа запросы телефон=================================================
+=========================================================================
+========================================================================= */
+@media screen and (max-width: 480px) {
+  .navbar {
+    height: 60px;
+  }
+  .navbar-brand img {
+    max-height: 40px;
+  }
+  .number {
+    font-size: 15px;
+  }
+  .navbar-toggler {
+    width: auto;
+    padding: 8px;
+  }
+
+  /*Шапка*/
+  .header {
+    padding-bottom: 102px;
+    background: #f0f1eb;
+  }
+
+  .header h2 {
+    font-size: 7vh;
+    width: 70vw;
+  }
+
+  .header h2 span {
+    font-size: 10vh;
+  }
+
+  .header h2:first-child {
+    
+    margin-top: 25px;
+    margin-left: 0px;
+  }
+
+  .header h2:last-child {
+    font-size: 40px;
+    width: 89vw;
+    margin-left: 50px;
+    padding: 0 10px;
+    margin-right: 0;
+  }
+
+  /*Первая форма*/
+  .form1 {
+    padding: 40px;
+    margin-top: 20px;
+  }
+
+  .form1 h3 {
+    text-align: justify;
+    font-size: 27px;
+    max-width: 250px;
+  }
+
+  .form1 p.small {
+    display: block;
+    text-align: center;
+    border: none;
+    text-decoration: underline;
+    margin-bottom: 0;
+  }
+
+  .form1 button {
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .form1 input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .sale {
+    position: absolute;
+    top: -28px;
+    right: -28px;
+    z-index: 30;
+    width: 30%;
+  }
+
+  .rocket {
+    width: 35%;
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    z-index: 29;
+  }
+
+  /*Вторая форма*/
+  .form2 {
+    margin-top: 260px;
+  }
+
+  .form2 p.bold {
+    text-align: center;
+  }
+
+  .form2 p.checked {
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .present {
+    width: 40%;
+    position: absolute;
+    top: -35px;
+    right: 0px;
+  }
+
+  ul.social {
+    position: absolute;
+    left: 35px;
+    top: 1070px;
+    background: transparent;
+  }
+
+  ul.social li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .ellipse {
+    position: absolute;
+    width: 55%;
+    top: -160px;
+    right: 50px;
+    z-index: 10;
+  }
+
+  .man {
+    max-height: 260px;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    z-index: 60;
+  }
+
+  .ship {
+    position: absolute;
+    top: 580px;
+    right: 100px;
+    width: 65%;
+    z-index: 30;
+  }
+
+  .helicopter {
+    position: absolute;
+    width: 40%;
+    top: 550px;
+    right: -10px;
+    z-index: 30;
+  }
+
+  /*О компании*/
+
+  .about ul {
+    padding: 10px;
+    margin-bottom: 0;
+  }
+  .about ul li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    width: 200px;
+    background-image: url(../img/line.png);
+  }
+
+  .about ul li:nth-child(1)::after {
+    display: none;
+  }
+
+  .about ul li:nth-child(3)::after {
+
+    bottom: 0px;
+  }
+
+  .about ul li:nth-child(7)::after {
+    bottom: 0px;
+  }
+
+
+  /*Услуги*/
+  .service {
+    background: #26282b;
+  }
+
+  .service p {
+    display: block;
+    border: none;
+    text-decoration: underline;
+  }
+
+  .service button {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 80px;
+  }
+
+  .service div.mount {
+    display: inline-flex;
+  }
+
+  .sale1 {
+    position: absolute;
+    width: 180px;
+    top: -40px;
+    right: 50px;
+    z-index: 30;
+  }
+
+  /* Этапы работы */
+ 
+ .item-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/tabStepEmpty.png);
+    padding: 0;
+    width: 70%;
+    margin-left: 65px;
+    height: 190px;
+    margin-bottom: -70px;
+  }
+
+  .item-steps p {
+    margin-top: -20px;
+    margin-left: 10px;
+  }
+  .item-steps img {
+    margin-top: -25px;
+  }
+
+  .item-steps img[alt="1"],
+  .item-steps img[alt="2"],
+  .item-steps img[alt="3"],
+  .item-steps img[alt="4"] {
+    position: absolute;
+    left: 43%;
+    top: 25px;
+  }
+/*Заказчику*/
+.customer p {
+  border:none;
+}
+  /* Отзывы */
+  .review {
+    display: block;
+    background-image: url(../img/reviewBack.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    margin-left: 0px;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+  }
+  .review.right {
+    padding: 20px 0px;
+    background-image: url(../img/reviewBackRight.png);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 30%;
+    background-position: right;
+  }
+  .review img {
+    margin-left: 50px;
+  }
+  .review.right img {
+    order: 1;
+    margin-left: -50px;
+  }
+
+  .review div p:nth-child(odd) {
+    text-align-last: left;
+    border: none;
+    padding-left: 30px;
+    color: #f6891e;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .review div p:nth-child(even) {
+    text-align-last: left;
+    display: block;
+    border: none;
+    font-style: italic;
+    padding-left: 30px;
+    color: #000;
+    text-decoration: none;
+  }
+  .review div p {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  /*Футер*/
+
+  .footer {
+    padding-left: 100px;
+  }
+  .footer .row.footerRow div:nth-child(1) {
+    order: 0;
+  }
+  .footer .row.footerRow div:nth-child(2) {
+    order: 1;
+  }
+  .footer .row.footerRow div:nth-child(3) {
+    order: 2;
+  }
+  .footer .row.footerRow div:nth-child(4) {
+    order: 3;
+  }
+  .footer .row.footerRow div:nth-child(5) {
+    order: 4;
+  }
+  .footer .row.footerRow div:nth-child(6) {
+    order: 5;
+  }
+  body > div.container-fluid.footer > div > div > div.col-xl-12 {
+    margin-left: -100px;
   }
 }
